@@ -1,0 +1,53 @@
+{
+  "name": "egg-psyduck-cache",
+  "version": "1.0.0",
+  "description": "Egg.js 缓存插件，支持内存、文件、Redis 缓存",
+  "author": "姜彦汐 <https://www.undsky.com>",
+  "license": "MIT",
+  "eggPlugin": {
+    "name": "cache"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "egg-cache",
+    "cache",
+    "cache-manager",
+    "memory",
+    "fs",
+    "redis"
+  ],
+  "dependencies": {
+    "cache-manager": "^4.1.0",
+    "cache-manager-fs-hash": "^1.0.0",
+    "cache-manager-ioredis": "^2.1.0"
+  },
+  "devDependencies": {
+    "egg": "^3",
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "config",
+    "app"
+  ],
+  "ci": {
+    "version": "16, 18"
+  }
+}
