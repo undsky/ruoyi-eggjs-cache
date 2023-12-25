@@ -1,6 +1,6 @@
 # egg-psyduck-cache
 
-> Egg.js 缓存插件，支持内存、文件、Redis 缓存
+> Egg plugin for cache
 
 ## 安装
 
