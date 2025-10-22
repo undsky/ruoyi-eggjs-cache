@@ -1,11 +1,11 @@
-# egg-psyduck-cache
+# ruoyi-eggjs-cache
 
 > Egg plugin for cache
 
 ## 安装
 
 ```bash
-$ npm i egg-psyduck-cache --save
+$ npm i ruoyi-eggjs-cache --save
 ```
 
 ## 支持的 egg 版本
@@ -20,7 +20,7 @@ $ npm i egg-psyduck-cache --save
 // {app_root}/config/plugin.js
 exports.cache = {
   enable: true,
-  package: "egg-psyduck-cache",
+  package: "ruoyi-eggjs-cache",
 };
 ```
 
