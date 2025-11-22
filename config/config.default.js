@@ -11,7 +11,7 @@ const path = require("path");
 module.exports = (appInfo) => ({
   cache: {
     default: "redis", // 默认缓存方式
-    ttl: 600, // 缓存时长（秒）
+    ttl: 86400, // 缓存时长（秒），默认24小时
     fs: {
       path: path.join(appInfo.baseDir, "cache"),
       subdirs: false,

@@ -22,18 +22,16 @@ module.exports = {
         redis: _redis,
       } = this.config.cache;
 
-      const _ttl = "prod" == this.config.env ? ttl : 1;
-
       const memory = cacheManager.caching({
         store: "memory",
-        ttl: _ttl,
+        ttl,
       });
 
       const fs = cacheManager.caching({
         store: fsStore,
         options: Object.assign(
           {
-            ttl: _ttl,
+            ttl,
           },
           _fs
         ),
@@ -45,7 +43,7 @@ module.exports = {
           Object.assign(
             {
               store: redisStore,
-              ttl: _ttl,
+              ttl,
             },
             _redis
           )
