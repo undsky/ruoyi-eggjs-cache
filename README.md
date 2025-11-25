@@ -4,6 +4,25 @@
 
 基于 [cache-manager](https://github.com/node-cache-manager/node-cache-manager) 的 Egg.js 缓存插件，支持多种缓存存储方式（内存、文件系统、Redis）。
 
+## 目录
+
+- [特性](#特性)
+- [安装](#安装)
+- [支持的 egg 版本](#支持的-egg-版本)
+- [开启插件](#开启插件)
+- [配置](#配置)
+- [使用方法](#使用方法)
+- [使用场景](#使用场景)
+- [缓存策略选择](#缓存策略选择)
+- [环境配置](#环境配置)
+- [完整示例](#完整示例)
+- [常见问题](#常见问题)
+- [性能优化建议](#性能优化建议)
+- [相关链接](#相关链接)
+- [完整示例项目](#完整示例项目)
+- [License](#license)
+
+
 ## 特性
 
 - ✅ 支持三种缓存存储：内存（Memory）、文件系统（FS）、Redis
@@ -589,48 +608,15 @@ const result = await this.queryDatabase();
    - 大数据、低频访问：FS
    - 共享数据、集群部署：Redis
 
-## 相关链接
 
-- [cache-manager](https://github.com/node-cache-manager/node-cache-manager)
-- [cache-manager-fs-hash](https://github.com/sheershoff/node-cache-manager-fs-hash)
-- [cache-manager-ioredis](https://github.com/dabroek/node-cache-manager-ioredis)
+## 完整示例项目
 
----
-
-## 关于 ruoyi-eggjs 项目
-
-本插件是 [ruoyi-eggjs](https://github.com/undsky/ruoyi-eggjs) 项目的核心组件之一。
-
-**ruoyi-eggjs** 是一个基于 Egg.js 的企业级后台管理系统，参照若依（RuoYi）架构设计，提供完善的权限管理、用户管理、系统监控等功能，是快速开发企业级应用的最佳选择。
-
-### 主要特性
-
-- 🎯 **完整的权限系统**：基于 RBAC 的权限控制，支持细粒度权限管理
-- 🚀 **开箱即用**：集成常用功能模块，快速启动项目开发
-- 🔧 **MyBatis 风格**：采用 XML 风格的 SQL 编写，熟悉的开发体验
-- 📦 **模块化设计**：松耦合的插件体系，按需使用
-- 🛡️ **企业级安全**：XSS 防护、SQL 注入防护、访问控制等
-- 📊 **系统监控**：在线用户、登录日志、操作日志、定时任务等
-
-### 项目地址
-
-- GitHub: [https://github.com/undsky/ruoyi-eggjs](https://github.com/undsky/ruoyi-eggjs)
-- Gitee: [https://gitee.com/undsky/ruoyi-eggjs](https://gitee.com/undsky/ruoyi-eggjs)
-
-### 相关插件
-
-- [ruoyi-eggjs-cache](https://github.com/undsky/ruoyi-eggjs-cache) - 缓存插件
-- [ruoyi-eggjs-mybatis](https://github.com/undsky/ruoyi-eggjs-mybatis) - MyBatis 集成
-- [ruoyi-eggjs-mysql](https://github.com/undsky/ruoyi-eggjs-mysql) - MySQL 连接
-- [ruoyi-eggjs-ratelimiter](https://github.com/undsky/ruoyi-eggjs-ratelimiter) - 限流插件
-- [ruoyi-eggjs-sqlite](https://github.com/undsky/ruoyi-eggjs-sqlite) - SQLite 支持
-- [ruoyi-eggjs-handlebars](https://github.com/undsky/ruoyi-eggjs-handlebars) - Handlebars 模板
+参考 [ruoyi-eggjs](https://github.com/undsky/ruoyi-eggjs) 项目查看完整使用示例。
 
 ### 联系方式
 
-- 📮 **Issues**: [提交问题或建议](https://github.com/undsky/ruoyi-eggjs/issues)
-- 🌐 **官网**: [https://www.undsky.com](https://www.undsky.com)
-- 💬 **讨论**: [GitHub Discussions](https://github.com/undsky/ruoyi-eggjs/discussions)
+- 🌐 **网站**: [https://www.undsky.com](https://www.undsky.com)
+- 📮 **Issues**: [提交问题或建议](https://github.com/undsky/ruoyi-eggjs-cache/issues)
 
 ### 贡献指南
 
