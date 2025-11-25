@@ -8,7 +8,6 @@
 
 - [特性](#特性)
 - [安装](#安装)
-- [支持的 egg 版本](#支持的-egg-版本)
 - [开启插件](#开启插件)
 - [配置](#配置)
 - [使用方法](#使用方法)
@@ -19,6 +18,8 @@
 - [常见问题](#常见问题)
 - [性能优化建议](#性能优化建议)
 - [完整示例项目](#完整示例项目)
+- [联系方式](#联系方式)
+- [贡献指南](#贡献指南)
 - [License](#license)
 
 
@@ -612,12 +613,12 @@ const result = await this.queryDatabase();
 
 参考 [ruoyi-eggjs](https://github.com/undsky/ruoyi-eggjs) 项目查看完整使用示例。
 
-### 联系方式
+## 联系方式
 
 - 🌐 **网站**: [https://www.undsky.com](https://www.undsky.com)
 - 📮 **Issues**: [提交问题或建议](https://github.com/undsky/ruoyi-eggjs-cache/issues)
 
-### 贡献指南
+## 贡献指南
 
 欢迎提交 Issue 和 Pull Request！
 
